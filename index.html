@@ -24,19 +24,19 @@
             <div class="masthead-content text-white">
                 <div class="container-fluid px-4 px-lg-0">
                     <h1 class="fst-italic lh-1 mb-4">Our Website is Coming Soon</h1>
-                    <p class="mb-5">We're working hard to finish the development of this site. Sign up below to receive updates and to be notified when we launch!</p>
+                    <p class="mb-5">We're working hard to finish the development of this site. Sign up below to receive updates and to be notified when we launch! Click on the icons to the right to; email us, visit our YouTube channel and also our blog and our shop will be available when our website is deployed and this page will be the shop page.</p>
                     <!-- * * * * * * * * * * * * * * *-->
                     <!-- * * SB Forms Contact Form * *-->
-                    <!-- * * * * * * * * * * * * * * *-->
+                    <!-- * * * * * * * * * * * * * * *-->             
                     <!-- This form is pre-integrated with SB Forms.-->
                     <!-- To make this form functional, sign up at-->
                     <!-- https://startbootstrap.com/solution/contact-forms-->
                     <!-- to get an API token!-->
-                    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                    <form id="contactForm" action="https://prototype-emailer-test.herokuapp.com" method="post">
                         <!-- Email address input-->
                         <div class="row input-group-newsletter">
-                            <div class="col"><input class="form-control" id="email" type="email" placeholder="Enter email address..." aria-label="Enter email address..." data-sb-validations="required,email" /></div>
-                            <div class="col-auto"><button class="btn btn-primary disabled" id="submitButton" type="submit">Notify Me!</button></div>
+                            <div class="col"><input class="form-control" id="email" name="email" type="email" placeholder="Enter email address..." aria-label="Enter email address..." data-sb-validations="required,email" /></div>
+                            <div class="col-auto"><button class="btn btn-primary enabled" id="submitButton" type="submit">Notify Me!</button></div>
                         </div>
                         <div class="invalid-feedback mt-2" data-sb-feedback="email:required">An email is required.</div>
                         <div class="invalid-feedback mt-2" data-sb-feedback="email:email">Email is not valid.</div>
@@ -65,9 +65,10 @@
         <!-- For more icon options, visit https://fontawesome.com/icons?d=gallery&p=2&s=brands-->
         <div class="social-icons">
             <div class="d-flex flex-row flex-lg-column justify-content-center align-items-center h-100 mt-3 mt-lg-0">
-                <a class="btn btn-dark m-3" href="#!"><i class="fab fa-twitter"></i></a>
-                <a class="btn btn-dark m-3" href="#!"><i class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-dark m-3" href="#!"><i class="fab fa-instagram"></i></a>
+                <a class="btn btn-dark m-3" href="mailto:xyantsbusiness@gmail.com"><i class="fab fa-google"></i></a>
+                <a class="btn btn-dark m-3" href="https://www.youtube.com/channel/UCiFQuZ-zJUhXC9Ly0TTRqmg"><i class="fab fa-youtube"></i></a>
+                <a class="btn btn-dark m-3" href="home.html"><i class="fab fa-blogger"></i></a>
+                <a class="btn btn-dark m-3" href="home.html"><i class="fab fa-shopify"></i></a>
             </div>
         </div>
         <!-- Bootstrap core JS-->
@@ -78,6 +79,5 @@
         <!-- * *                               SB Forms JS                               * *-->
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     </body>
 </html>
